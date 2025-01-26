@@ -17,6 +17,9 @@ a {
 .header {
   background: #fff;
   padding: 15px 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
 }
 
 .flex_header {
@@ -37,7 +40,7 @@ a {
 
 .contact a:hover{
   color: #333;
-  transition: 0.3s;
+  transition:all 0.3s;
 }
 
 /*main_visual------------------------------------------------------------------------------------------------------------------*/
@@ -117,7 +120,7 @@ a {
 .skill_flex {
   flex-wrap: wrap;
   gap: 100px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .skill_flex li img {
@@ -128,7 +131,7 @@ a {
 
 .skill_flex li img:hover{
   opacity: 1;
-  transition: 0.3s;
+  transition:all 0.3s;
 }
 /*plan------------------------------------------------------------------------------------------------------------------------*/
 .plan {
@@ -197,9 +200,9 @@ a {
   display: block;
   text-align: center;
 }
-.sns ul li a:hover{
+.sns ul li:hover{
   background-color: #fff;
-  transition: 0.3s;
+  transition:all 0.3s;
 }
 
 /*footer-------------------------------------------------------------------------------------------------------*/
