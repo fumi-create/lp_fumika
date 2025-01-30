@@ -13,6 +13,16 @@ a {
   text-decoration: none;
 }
 
+.fa_color1 {
+  color: #777;
+}
+
+.fa_color2 {
+  color: #8c8c8c;
+  overflow: hidden;
+  font-size: 40px;
+}
+
 /*header--------------------------------------------------------------------------------------------------------------------*/
 .header {
   background: #fff;
@@ -34,18 +44,19 @@ a {
   border: none;
 }
 
-.contact a{
+.contact a {
   color: #fff;
+  transition: all 0.3s;
 }
 
-.contact a:hover{
+.contact a:hover {
   color: #333;
-  transition:all 0.3s;
 }
 
 /*main_visual------------------------------------------------------------------------------------------------------------------*/
 .main_visual {
-  padding: 400px 0;
+  padding-top: 478px;
+  padding-bottom: 400px;
   background-image: url(../img/keyvisual/keyvisual.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,6 +80,7 @@ a {
 /*work-------------------------------------------------------------------------------------------------------------------*/
 .work {
   background-color: #e3f2fd;
+  padding-top:50px;
 }
 
 .work_flex {
@@ -77,12 +89,12 @@ a {
 
 .work_img {
   width: 40%;
+  text-align: center;
 }
 
 .work_img img {
   width: 250px;
   height: auto;
-  margin-top: 50px;
 }
 
 .work_text {
@@ -92,9 +104,9 @@ a {
 .work_text h3 {
   font-size: 40px;
   letter-spacing: 10px;
-  margin-top: 70px;
   margin-bottom: 35px;
   text-align: center;
+  padding-top:20px;
 }
 
 .work_text p {
@@ -127,12 +139,13 @@ a {
   height: 300px;
   width: 300px;
   opacity: 0.7;
+  transition: all 0.3s;
 }
 
-.skill_flex li img:hover{
+.skill_flex li img:hover {
   opacity: 1;
-  transition:all 0.3s;
 }
+
 /*plan------------------------------------------------------------------------------------------------------------------------*/
 .plan {
   background-color: #d0dfea;
@@ -194,15 +207,16 @@ a {
 .sns ul li {
   padding: 25px 0;
   width: 185px;
+  transition: all 0.3s;
 }
 
 .sns ul li a {
   display: block;
   text-align: center;
 }
-.sns ul li:hover{
+
+.sns ul li:hover {
   background-color: #fff;
-  transition:all 0.3s;
 }
 
 /*footer-------------------------------------------------------------------------------------------------------*/
