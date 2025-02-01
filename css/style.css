@@ -23,6 +23,10 @@ a {
   font-size: 40px;
 }
 
+.main {
+  padding-top: 78px;
+}
+
 /*header--------------------------------------------------------------------------------------------------------------------*/
 .header {
   background: #fff;
@@ -34,7 +38,7 @@ a {
 
 .flex_header {
   justify-content: space-between;
-  align-items: flex-start
+  align-items: center;
 }
 
 .contact {
@@ -42,6 +46,10 @@ a {
   font-size: 12px;
   padding: 12px 14px;
   border: none;
+}
+
+.contact_sp {
+  display: none;
 }
 
 .contact a {
@@ -55,8 +63,7 @@ a {
 
 /*main_visual------------------------------------------------------------------------------------------------------------------*/
 .main_visual {
-  padding-top: 478px;
-  padding-bottom: 400px;
+  padding: 400px 0;
   background-image: url(../img/keyvisual/keyvisual.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,7 +87,7 @@ a {
 /*work-------------------------------------------------------------------------------------------------------------------*/
 .work {
   background-color: #e3f2fd;
-  padding-top:50px;
+  padding-top: 50px;
 }
 
 .work_flex {
@@ -104,9 +111,9 @@ a {
 .work_text h3 {
   font-size: 40px;
   letter-spacing: 10px;
+  padding-top: 20px;
   margin-bottom: 35px;
   text-align: center;
-  padding-top:20px;
 }
 
 .work_text p {
@@ -133,9 +140,18 @@ a {
   flex-wrap: wrap;
   gap: 100px;
   justify-content: flex-start;
+  margin-bottom: 100px;
 }
 
-.skill_flex li img {
+.skill_flex:last-child {
+  margin-bottom: 0px;
+}
+
+.skill_flex div {
+  height: 300px;
+}
+
+.skill_flex img {
   height: 300px;
   width: 300px;
   opacity: 0.7;
@@ -229,4 +245,147 @@ a {
 .small {
   font-size: 10px;
   text-align: right;
+}
+
+/*タブレット----------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1199px) {
+
+  /*ヘッダー*/
+  .inner {
+    width: 99%;
+  }
+
+  /*メインビジュアル*/
+  .main_visual {
+    padding: 250px 0;
+  }
+
+  /*ワーク*/
+  .work_flex {
+    display: block;
+  }
+
+  .work_img {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .work_text {
+    width: 100%;
+  }
+
+  .work_text h3 {
+    margin-top: 0px;
+    margin-bottom: 35px;
+  }
+
+  .work_text p {
+    padding-bottom: 50px;
+  }
+
+  /*スキル*/
+
+  .skill_flex {
+    display: block;
+    gap: 0px;
+    text-align: center;
+  }
+
+  .skill_img li {
+    margin-bottom: 80px;
+  }
+
+  .skill_img li:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+/*スマホ-------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:767px) {
+
+  /*ヘッダー*/
+  .inner {
+    width: 99%;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .contact a {
+    display: none;
+  }
+
+  .contact_sp {
+    display: block;
+    border: #e3f2fd solid 3px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .contact_sp a span {
+    display: block;
+  }
+
+  .sp-btn {
+    display: block;
+    content: '';
+    height: 4px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: #e3f2fd;
+  }
+
+  .sp-btn:first-child {
+    margin-bottom: 6px;
+  }
+
+  .sp-btn:last-child {
+    margin-top: 6px;
+  }
+
+  /*メインビジュアル*/
+  .main_visual h2 {
+    font-size: 40px;
+  }
+
+  .main_visual h3 {
+    font-size: 30px;
+  }
+
+  .main_visual {
+    padding: 200px 0;
+  }
+
+  /*ワーク*/
+  .work_flex br {
+    display: none;
+  }
+
+  /*プラン*/
+  .table th {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .table td {
+    font-size: 12px;
+  }
+
+  /*SNS*/
+  .sns {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .sns_flex {
+    display: block;
+  }
+
+  .sns ul li {
+    padding: 50px 0;
+    width: 100%;
+    margin: 0 15px;
+  }
 }
