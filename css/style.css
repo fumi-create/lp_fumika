@@ -22,25 +22,17 @@ a {
   overflow: hidden;
   font-size: 40px;
 }
-
-.body {
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 .main {
-  flex: 1;
-  overflow-y: scroll;
-  height: 100%;
+padding-top: 78px;
 }
 
 /*header--------------------------------------------------------------------------------------------------------------------*/
 .header {
   background: #fff;
   padding: 15px 0;
+  width: 100%;
   z-index: 100;
+  position: fixed;
 }
 
 .flex_header {
@@ -320,6 +312,7 @@ a {
   /*ヘッダー*/
   .inner {
     width: 99%;
+    margin: 0;
   }
 
   .contact {
@@ -397,8 +390,8 @@ a {
   }
 
   .sns ul li {
-    padding: 50px 0;
+    padding: 50px 15px;
     width: 100%;
-    margin: 0 15px;
+    box-sizing: border-box;
   }
 }
