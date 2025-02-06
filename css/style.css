@@ -252,7 +252,7 @@ padding-top: 78px;
 
   /*ヘッダー*/
   .inner {
-    width: 99%;
+    width: 97%;
   }
 
   /*メインビジュアル*/
@@ -263,6 +263,7 @@ padding-top: 78px;
   /*ワーク*/
   .work {
     padding-bottom: 50px;
+    margin-bottom: 10px;
   }
 
   .work_flex {
@@ -272,7 +273,6 @@ padding-top: 78px;
   .work_img {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
   }
 
   .work_text {
@@ -291,8 +291,8 @@ padding-top: 78px;
     gap: 0px;
     text-align: center;
   }
-
-  .skill_img li {
+  
+  .skill_img li:nth-child(3n){
     margin-bottom: 80px;
   }
 
@@ -311,8 +311,7 @@ padding-top: 78px;
 
   /*ヘッダー*/
   .inner {
-    width: 99%;
-    margin: 0;
+    width: 97%;
   }
 
   .contact {
@@ -390,8 +389,6 @@ padding-top: 78px;
   }
 
   .sns ul li {
-    padding: 50px 15px;
     width: 100%;
-    box-sizing: border-box;
   }
 }
