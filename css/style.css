@@ -65,6 +65,7 @@ padding-top: 78px;
 .main_visual {
   padding: 400px 0;
   background-image: url(../img/keyvisual/keyvisual.jpg);
+  background-position:bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -106,12 +107,12 @@ padding-top: 78px;
 
 .work_text {
   width: 60%;
+  padding-top: 20px;
 }
 
 .work_text h3 {
   font-size: 40px;
   letter-spacing: 10px;
-  padding-top: 20px;
   margin-bottom: 35px;
   text-align: center;
 }
